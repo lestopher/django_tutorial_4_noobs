@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'C:/Users/christopher.nguyen/Documents/GitHub/django_tutorial/django_tutorial/django_tutorial.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/Users/christophernguyen/Sites/django_tutorial/django_tutorial.sqlite3',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'nm&-)e=9di^=jc&&40&$6mt*7jfdhyyt13y04xh(2z85q$#5au'
+SECRET_KEY = 'w!a00(qsd9sbs64$y=4old&ggh7_q6z+#@zfpzur5rbw)4+n3)'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -111,6 +111,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    '/Users/christophernguyen/Sites/django_tutorial/templates',
 )
 
 INSTALLED_APPS = (
@@ -124,7 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'polls',
+    'polls'
 )
 
 # A sample logging configuration. The only tangible logging
